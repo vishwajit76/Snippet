@@ -1,4 +1,4 @@
-package com.cyberparkitsolutions.totality.utils;
+package com.yourpackagename;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -10,7 +10,7 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
-import com.cyberparkitsolutions.totality.R;
+import com.yourpackagename.R;
 
 
 /**
