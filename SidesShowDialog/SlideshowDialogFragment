@@ -14,9 +14,9 @@ import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.bumptech.glide.Glide;
-import com.cyberparkitsolutions.jbcc.AppUtils;
-import com.cyberparkitsolutions.jbcc.R;
-import com.cyberparkitsolutions.jbcc.models.Gallery;
+import com.yourpackagename.TimeStampUtil;
+import com.yourpackagename.R;
+import com.yourpackagename.Gallery;
 
 import java.util.ArrayList;
 
@@ -86,7 +86,7 @@ public class SlideshowDialogFragment extends DialogFragment {
 
         Gallery image = images.get(position);
         lblTitle.setText(image.getName());
-        lblDate.setText(AppUtils.getTimeAgoDate(image.getTimestampLong()));
+        lblDate.setText(TimeStampUtil.getTimeAgoDate(image.getTimestampLong()));
     }
 
     @Override
