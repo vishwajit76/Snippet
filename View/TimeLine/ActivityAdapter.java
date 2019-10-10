@@ -1,4 +1,4 @@
-package com.cyberparkitsolutions.jbcc.adapters;
+package com.yourpackagename;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -16,10 +16,9 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.cyberparkitsolutions.jbcc.AppUtils;
-import com.cyberparkitsolutions.jbcc.R;
-import com.cyberparkitsolutions.jbcc.listeners.RemoveItemListener;
-import com.cyberparkitsolutions.jbcc.models.LastActivity;
+import com.yourpackagename.TimeStampUtil;
+import com.yourpackagename.R;
+import com.yourpackagename.LastActivity;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -89,24 +88,24 @@ public class ActivityAdapter extends FirebaseRecyclerAdapter<LastActivity, Activ
         public void bind(final LastActivity model, final Context context, int position) {
 
 
-            Log.w("vishwa", "position - " + position + " id - " + model.getActivity_id() + "  ts - " + model.getTimestampLong() + " msg - " + model.getMessage());
+            //Log.w("LastActivity", "position - " + position + " id - " + model.getActivity_id() + "  ts - " + model.getTimestampLong() + " msg - " + model.getMessage());
 
 
             if (position == (getItemCount() - 1)) {
                 ll_time.setVisibility(View.VISIBLE);
             } else {
 
-                if (!AppUtils.isSameDay(getItem(position + 1).getTimestampLong(), model.getTimestampLong())) {
+                if (!TimeStampUtil.isSameDay(getItem(position + 1).getTimestampLong(), model.getTimestampLong())) {
 
                     ll_time.setVisibility(View.VISIBLE);
                 }
             }
 
 
-            tv_month.setText(AppUtils.getDate(model.getTimestampLong(), "MMM").toUpperCase());
-            tv_day.setText(AppUtils.getDate(model.getTimestampLong(), "dd"));
-            tv_day_text.setText(AppUtils.getDate(model.getTimestampLong(), "EEE").toUpperCase());
-            tv_time_ago.setText(AppUtils.getTimeAgo(model.getTimestampLong()));
+            tv_month.setText(TimeStampUtil.getDate(model.getTimestampLong(), "MMM").toUpperCase());
+            tv_day.setText(TimeStampUtil.getDate(model.getTimestampLong(), "dd"));
+            tv_day_text.setText(TimeStampUtil.getDate(model.getTimestampLong(), "EEE").toUpperCase());
+            tv_time_ago.setText(TimeStampUtil.getTimeAgo(model.getTimestampLong()));
 
             tv_message.setText(model.getMessage());
 
