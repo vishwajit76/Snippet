@@ -6,18 +6,12 @@ Snippet Code
   implementation 'com.android.support:multidex:1.0.3'
 
   **firebase**
-  implementation 'com.google.firebase:firebase-analytics:17.2.0'
-  
-  implementation 'com.google.firebase:firebase-core:17.2.0'
-  
-  implementation 'com.google.firebase:firebase-database:19.1.0'
-  
-  implementation 'com.google.firebase:firebase-auth:19.1.0'
-  
-  implementation 'com.google.firebase:firebase-storage:19.1.0'
-  
-  implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
-  
+  implementation 'com.google.firebase:firebase-analytics:17.2.0'\n
+  implementation 'com.google.firebase:firebase-core:17.2.0'\n
+  implementation 'com.google.firebase:firebase-database:19.1.0'\n
+  implementation 'com.google.firebase:firebase-auth:19.1.0'\n
+  implementation 'com.google.firebase:firebase-storage:19.1.0'\n
+  implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'\n
   implementation 'com.firebaseui:firebase-ui-database:4.3.2'
   
   **load image**
