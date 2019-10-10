@@ -43,7 +43,7 @@ Snippet Code
   **ShowCase View**  
   implementation 'com.github.amlcurran.showcaseview:library:5.4.3' 
   
-  **Expandable View**
+  **Expandable View**  
   implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2'  
   
   **Sticky ScrollView**  
