@@ -33,3 +33,25 @@ Snippet Code
   
   **Bottom NavigationBar Menu**  
   implementation 'com.github.iammert:ReadableBottomBar:0.2'  
+
+  **Hashtag View**  
+  implementation 'com.github.greenfrvr:hashtag-view:1.3.1'  
+  
+  **Text Drawable**  
+  implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'  
+  
+  **ShowCase View**  
+  implementation 'com.github.amlcurran.showcaseview:library:5.4.3' 
+  
+  **Expandable View**
+  implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2'  
+  
+  **Sticky ScrollView**  
+  implementation 'com.github.amarjain07:StickyScrollView:1.0.2'  
+  
+  **Zoom View**  
+  implementation 'com.otaliastudios:zoomlayout:1.6.1'  
+  
+  **Sicker View For Canvase Draw**  
+  implementation 'com.github.shashi180493:StickerView:1.0'  
+
