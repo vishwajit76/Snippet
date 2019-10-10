@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.gavinliu.android.lib.scale.ScaleLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+    <cn.gavinliu.android.lib.scale.ScaleLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <cn.gavinliu.android.lib.scale.ScaleLinearLayout
+        android:id="@+id/ll_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.75"
+        android:visibility="gone"
+        android:orientation="vertical">
+        
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOV"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <cn.gavinliu.android.lib.scale.ScaleLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:textColor="@color/textPrimary"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tv_day_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SAT"
+                    android:textColor="@color/textGrey"
+                    android:textStyle="bold"
+                    android:textSize="8sp"/>
+
+
+            </cn.gavinliu.android.lib.scale.ScaleLinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        
+    </cn.gavinliu.android.lib.scale.ScaleLinearLayout>
+
+
+        <cn.gavinliu.android.lib.scale.ScaleLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25">
+
+        </cn.gavinliu.android.lib.scale.ScaleLinearLayout>
+
+    </cn.gavinliu.android.lib.scale.ScaleLinearLayout>
+
+
+    <cn.gavinliu.android.lib.scale.ScaleLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <cn.gavinliu.android.lib.scale.ScaleLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75">
+
+            <View
+                android:id="@+id/view_line"
+                android:visibility="visible"
+                android:layout_width="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/line_dotted" />
+
+
+        </cn.gavinliu.android.lib.scale.ScaleLinearLayout>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            app:cardBackgroundColor="@color/card_grey"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true">
+
+            <cn.gavinliu.android.lib.scale.ScaleLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+
+
+            <cn.gavinliu.android.lib.scale.ScaleRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="User Name"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="14sp" />
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/iv_user"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    app:civ_border_width="2dp"
+                    android:src="@drawable/ic_user"/>
+
+
+
+            </cn.gavinliu.android.lib.scale.ScaleRelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Activity message"
+                    android:padding="5dp"
+                    android:textColor="@color/textGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_time_ago"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1h 30min ago"
+                    android:gravity="right"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10sp" />
+
+            </cn.gavinliu.android.lib.scale.ScaleLinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </cn.gavinliu.android.lib.scale.ScaleLinearLayout>
+
+</cn.gavinliu.android.lib.scale.ScaleLinearLayout>
