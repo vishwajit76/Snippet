@@ -5,7 +5,7 @@ Snippet Code
 
   implementation 'com.android.support:multidex:1.0.3'
 
-  //firebase//
+  //firebase
   implementation 'com.google.firebase:firebase-analytics:17.2.0'
   implementation 'com.google.firebase:firebase-core:17.2.0'
   implementation 'com.google.firebase:firebase-database:19.1.0'
